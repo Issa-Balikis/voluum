@@ -1,17 +1,16 @@
 .afs {
     position: relative;
-    margin: 700px 0 0 0; 
+    margin: 70% 0 0 0; 
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .afs-header h4{
     font-size: 25px;
     font-weight: 700;
-    width: 98%;
     text-transform: capitalize;
-    text-align: center;
 }
 
 .afs-group ul{
@@ -41,7 +40,6 @@
 
 .afs-left {
     padding: 70px;
-    width: 40%;
 }
 .afs-left h6 {
     text-transform: uppercase;
@@ -95,7 +93,7 @@
 
 .flex ol {
     display: flex;
-    width: 150%;
+    width: 100%;
     padding: 10px;
 }
 
@@ -147,25 +145,143 @@
 
 .condition-option {
     color: white;
+    display: flex;
+}
+
+.condition-option h4 {
+    padding: 15px 5px;
 }
 
 .afs-right .conditions .condition-option  select{
-    margin: 5px;
-    padding: 10px;
+    margin: 5px 2px;
     background: #9A54EA;
     border:  1px solid rgba(255, 255, 255, 0.358);
     border-radius: 15px;
 }
 
+.afs-right .conditions .condition-option .value {
+    display: flex;
+}
+
 .afs-right .conditions .condition-option input {
     background: #9A54EA;
     margin: 5px;
-    padding: 10px;
+    padding: 10px 0;
     border: 1px solid rgba(255, 255, 255, 0.358);
     border-radius: 15px;
 }
 
+.afs-right .conditions .condition-option input::placeholder {
+    color: white;
+}
+
+.afs-right .conditions .condition-option .value .id {
+    margin-left: -92px;
+    padding: 10px 0;
+    display: flex;
+
+}
+
+.condition-option .value .id button {
+    background: #9A54EA;
+    box-shadow: 1px 1px 1px 1px gray;
+}
+
 .afs-right .case-btn {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+}
+
+@media (max-width: 992px) {
+   /*  .afs {
+        display: grid;
+    }
+
+ */
+
+   .afs-head {
+      display: flex;
+      flex-direction: column;
+   }
+
+    .afs-header h4 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .afs-group ul{
+        flex-direction: column;
+        text-align: center;
+   }
+
+   .afs-group ul li {
+       margin: 3px;
+       padding: 10px 60px;
+   }
+
+   .afs-group ul li:first-child {
+       border-top-left-radius: 15px;
+       border-top-right-radius: 15px;
+       background: #9A54EA;
+   }
+
+   .afs-group ul li:last-child {
+       border-radius: 0;
+   }
+
+    .afsleftright {
+        flex-direction: column;
+        padding: 30px 0;
+        width: 100%;
+    }
+
+    .afs-left {
+        padding: 20px;
+    }
+
+    .afs-right {
+        padding: 70px 0;
+    }
+    
+    .afs-right .flex {
+        flex-direction: column;
+    }
+    
+    .flex ol {
+        flex-direction: column;
+        padding: 10px;
+        }
+    .afs-right .rule-option {
+            margin:  30px; 
+       }
+       
+   .afs-right .conditions {
+       flex-direction: column;
+       margin: 10px;
+   }
+
+   .condition-option {
+       color: white;
+       flex-direction: column;
+   }
+
+   .afs-right .conditions .condition-option select {
+       padding: 10px;
+   }
+
+   .afs-right .conditions .condition-option .value {
+       display: flex;
+       justify-content: center;
+   }
+
+   .afs-right .conditions .condition-option .value .id {
+       padding: 10px 0;
+       display: flex;
+
+   }
+   .afs-right .case-btn {
+       display: flex;
+       justify-content: center;
+   }
+
 }

@@ -1,11 +1,12 @@
 .cards {
     display: flex;
-    padding: 0 70px;
+    padding:  70px;
+    background: rgb(234, 231, 231);
+    margin: 20px;
 }
 
 .card img {
     background: rgba(216, 210, 210, 0.381);
-    padding: 10px;
     border-radius: 50%;
 }
 
@@ -28,4 +29,16 @@
    transition: .3s ease-in-out;
    color: #9A54EA;
    background: none;
+}
+
+@media (max-width:768px) {
+    .cards {
+        display: grid;
+        padding: 30px;
+    }
+
+    .card {
+        margin: 30px 20px;
+    }
+
 }

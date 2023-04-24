@@ -13,7 +13,7 @@ const Hero = () => {
                    Affiliate Commmunity Leader
                 </h6>
             </div>
-            <img src="../pic2.png" alt="" />
+            <img src="../pic2.png" alt=""  className='pic2'/>
         </div>
      );
 }

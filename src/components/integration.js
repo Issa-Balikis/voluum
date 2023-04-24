@@ -95,11 +95,10 @@ function SvgComponent(props) {
 }
     return (
         <div className="integration">
-            <SvgComponent />
-            <img src="../image3.png" alt="" />
+            <SvgComponent className="svg"/>
+            <img src="../image3.png" alt="" className='img3' />
             <h3>Integrated with 40+ traffic sources</h3>
             <div className="logos">
-                <img src="../image12.png" alt="" />
                 <img src="../image13.png" alt="" />
                 <img src="../image14.png" alt="" />
                 <img src="../image15.png" alt="" />

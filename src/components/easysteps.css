@@ -1,14 +1,14 @@
 .easy {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 40px;
+    display: flex;
+    padding: 40px ;
+    justify-content: space-around;
 }
 
 .easy-left {
-    margin: 50px;
+    margin: 50px ;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
 }
 
 .easy-left h3 {
@@ -20,15 +20,11 @@
 .easy-left h2 {
     font-weight: 900;
     font-size: 27px;
-    width: 50%;
-    margin-right: -70px;
 }
 
 .easy-left p {
-    width: 70%;
-    padding: 20px;
+    padding: 20px 0;
     font-size: 1.1rem;
-    margin-right: -140px;
 }
 
 .easy-right img {
@@ -42,11 +38,42 @@
     align-items: center;
 }
 
-.easy-right .card {
+/* .easy-right .card {
     background: #9A54EA;
     position: absolute;
-        width: 634px;
-        height: 600px;
-        left: 830px;
-        top: 4900px;
+    width: 634px;
+    height: 600px;
+    left: 980px;
+    top: 5900px;
+} */
+
+@media (max-width: 992px) {
+    .easy {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .easy-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    
+        .easy-left h3 {
+            color: #cb10a6;
+            font-size: 1rem;
+            padding-bottom: 10px;
+        }
+    
+       
+        .easy-right img {
+            width: 500px;
+            height: 350px;
+        }
+    
+        .easy-right {
+            display: flex;
+            align-items: center;
+        }
+    
 }

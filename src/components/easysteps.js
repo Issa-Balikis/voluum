@@ -16,8 +16,6 @@ const EasySteps = () => {
                 </ul>
             </div>
             <div className="easy-right">
-                <div className="card">
-                </div>
                 <img src="../easy1.png" alt="" />
             </div>
         </div>

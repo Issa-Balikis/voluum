@@ -1,7 +1,7 @@
 .cookie {
+    width: 100%;
     background: rgb(240, 233, 233);
     position: absolute;
-    margin: 50px 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -44,6 +44,48 @@
 }
 
 .cookie-right img{
-    width: 350px;
+    width: 100%;
     padding: 40px;
+}
+
+@media only screen and (max-width: 992px) {
+    .cookie {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0;
+    }
+
+        .cookie-left {
+            padding: 0 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    
+        .cookie-left h5 {
+            font-size: 1rem;
+            padding: 10px 0;
+        }
+    
+        .cookie-left h3 {
+            width: 100%;
+            font-size: 1.4rem;
+        }
+    
+        .cookie-left p {
+            width: 100%;
+            height: 50%;
+            font-size: 1rem;
+        }
+
+        .cookie-right {
+            margin-right: 50px;
+        }
+
+        .cookie-right .img {
+            background: #9A54EA;
+            margin-left: 40px;
+           
+       }
 }

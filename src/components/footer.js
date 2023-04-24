@@ -14,7 +14,7 @@ const Footer = () => {
                         <Button>GET STARTED 
                             <ArrowForwardIcon />
                         </Button>
-                    </div>
+                    </div> 
                     </div>
                     <div className="footer-right">
                         <h4>TRACK ON THE GO</h4>
@@ -33,7 +33,7 @@ const Footer = () => {
                         <img src="../logo.png" alt="" />
                         <figcaption>DSP</figcaption>
                         </figure>
-                        <p className='join'>Join our communities of affiliates on
+                        <p className='join'>Join our communities of affiliates on </p>
                         <div className="social-p">
                             <div className="facebook">
                             <FaFacebook /> 
@@ -44,7 +44,7 @@ const Footer = () => {
                             <p>Telegram</p> 
                             </div>
                             </div>
-                        </p>
+                        
                     </div>
                     <div className="footer-links">
                         <div className="company">

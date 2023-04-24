@@ -38,3 +38,21 @@
     margin: 30px;
     cursor: pointer;
 }
+
+@media (max-width:768px) {
+    .inquiries {
+    }
+
+    .inquiries .affiliate-logos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 30px;
+        
+    }
+
+    .inquiries .social-logos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 30px;
+    }
+}

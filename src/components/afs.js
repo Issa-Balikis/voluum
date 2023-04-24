@@ -1,11 +1,36 @@
 import { ArrowForwardIcon } from '@chakra-ui/icons';
 import { Button } from '@chakra-ui/react';
+import { useState } from 'react';
 import './afs.css'
 import Cards from './cards';
 
 const AffiliateMarketingSoftware = () => {
+     const [formData, setFormData] = useState({
+       /*  campaign: "", */
+       /*  offer: "", */
+       /*  dimension: "", */
+        create: "",
+        conversion: "",
+        higher: ""
+     })
+
+      const handleChange = (event) => {
+        const { name, value, type, defaultChecked } = event.target
+        setFormData(prevState => {
+            return {
+                ...prevState,
+                [name]: type === "checkbox" ? defaultChecked :  value
+            }
+        })
+    }
+
+      const handleSubmit = (event) => {
+        event.preventDefault()
+    }
+
     return (
         <div className="afs">
+          <div className="afs-head">
             <div className="afs-header">
                 <h4>Improve your ad performance with our affiliate marketing software</h4>
             </div>
@@ -15,6 +40,7 @@ const AffiliateMarketingSoftware = () => {
                     <li>Optimize</li>
                     <li>Automate</li>
                 </ul>
+            </div>
             </div>
             <div className="afsleftright">
             <div className="afs-left">
@@ -37,18 +63,36 @@ const AffiliateMarketingSoftware = () => {
                 </ol>
                 </div>
                 <div className="rule-option">
-                    <form>
+                    <form onSubmit={handleSubmit}>
                         <label htmlFor="create" className='create'>Create rule</label>
                         <div className="input1">
-                        <input type="radio" />
+                        <input type="radio"
+                               name="create"
+                               id="campaign"
+                               value="campaign"
+                               defaultChecked={formData.create === "campaign"}
+                                onChange={handleChange}
+                         />
                         <label htmlFor="campaign">Campaign</label>
                         </div>
                         <div className="input2">
-                        <input type="radio" />
+                        <input type="radio"
+                               name="create"
+                               id="offer"
+                               value="offer"
+                               defaultChecked={formData.create === "offer"}
+                                onChange={handleChange}
+                         />
                         <label htmlFor="offer">Offer</label>
                         </div>
                         <div className="input3">
-                        <input type="radio" />
+                        <input type="radio" 
+                               name="create"
+                               id="dimension"
+                               value="dimension"
+                              defaultChecked={formData.create === "dimension"}
+                               onChange={handleChange}
+                        />
                         <label htmlFor="dimension">Dimension</label>
                         </div>
                     </form>
@@ -56,18 +100,38 @@ const AffiliateMarketingSoftware = () => {
                 </div>
                 <div className="conditions">
                     <p className='c-p'>Set conditions that trigger the action</p>
-                    <p className='condition-option'>IF
-                      <select name="" id="">
-                        <option value="">conversion</option>
-                        <option value="">conversion</option>
-                        <option value="">conversion</option>
+                    <div className='condition-option'>
+                        <h4>IF</h4>
+                      <select 
+                            id="conversion"
+                            value={formData.conversion}
+                            onChange={handleChange}
+                            name= "conversion"
+                            className="select"
+                      >
+                        <option value="conversion">conversion</option>
+                        <option value="converiosn1">conversion1</option>
+                        <option value="converison2">conversion2</option>
                       </select>
-                      <select name="" id="">
-                        <option value="">is higher than</option>
-                        <option value="">is lower than</option>
+                      <select 
+                            id="higher"
+                            value={formData.higher}
+                            onChange={handleChange}
+                            name= "higher"
+                            className="select"
+                      >
+                        <option value="higher">is higher than</option>
+                        <option value="lower">is lower than</option>
                       </select>
-                      <input type="text" placeholder='Type value  - +' />
-                    </p>
+                      <div className="value">
+                      <input type="text" placeholder='Type value' 
+                      />
+                      <div className="id">
+                      <Button className='increment'>+</Button>
+                      <Button className='decrement'>-</Button>
+                      </div>
+                      </div>
+                    </div>
                 </div>
                  <div className="case-btn">
                     <Button>SEE ALL FEATURES
@@ -77,7 +141,7 @@ const AffiliateMarketingSoftware = () => {
             </div>
             </div>
             <Cards />
-        </div>
+        </div> 
      );
 }
  
