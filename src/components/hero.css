@@ -1,0 +1,23 @@
+.hero {
+    display: flex;
+    margin: 80px 0;
+}
+
+.hero .desc{
+    background: #2ACDED;
+    color: white;
+}
+
+.hero .desc p {
+    padding: 70px 20px;
+    font-size: 1.1rem;
+}
+
+.hero .desc h6 {
+    margin: 30px;
+    line-height: 50px;
+}
+
+.hero .desc h6 span {
+    font-weight: bold;
+}

@@ -1,0 +1,40 @@
+.inquiries {
+    margin: 200px 0 ;
+}
+
+.inquiries p {
+    text-align: center;
+}
+
+.inquiries .bold-p {
+    font-weight: bold;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.inquiries .capitalize-p {
+    text-transform: uppercase;
+    padding: 10px;
+    color: gray;
+    font-size: 1rem;
+}
+
+.inquiries .affiliate-logos {  
+    display: flex;
+    justify-content: center;
+}
+
+.affiliate-logos img {
+    margin: 25px;
+    cursor: pointer;
+}
+
+.inquiries .social-logos {
+    display: flex;
+    justify-content: center;
+}
+
+.social-logos img {
+    margin: 30px;
+    cursor: pointer;
+}

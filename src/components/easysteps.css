@@ -1,0 +1,52 @@
+.easy {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 40px;
+}
+
+.easy-left {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.easy-left h3 {
+    color: #cb10a6;
+    font-size: 1rem;
+    padding-bottom: 10px;
+}
+
+.easy-left h2 {
+    font-weight: 900;
+    font-size: 27px;
+    width: 50%;
+    margin-right: -70px;
+}
+
+.easy-left p {
+    width: 70%;
+    padding: 20px;
+    font-size: 1.1rem;
+    margin-right: -140px;
+}
+
+.easy-right img {
+    width: 623px;
+    height: 592px;
+    position: relative;
+}
+
+.easy-right {
+    display: flex;
+    align-items: center;
+}
+
+.easy-right .card {
+    background: #9A54EA;
+    position: absolute;
+        width: 634px;
+        height: 600px;
+        left: 830px;
+        top: 4900px;
+}

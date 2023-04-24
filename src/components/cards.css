@@ -1,0 +1,31 @@
+.cards {
+    display: flex;
+    padding: 0 70px;
+}
+
+.card img {
+    background: rgba(216, 210, 210, 0.381);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.card h3 {
+    padding: 20px 0;
+    font-weight: 900;
+}
+
+.card p {
+    font-size: 1.1rem;
+    width: 70%;
+}
+
+.card button {
+    background: none;
+    margin-top: 30px;
+    color: #cb10a6;
+}
+.card button:hover {
+   transition: .3s ease-in-out;
+   color: #9A54EA;
+   background: none;
+}

@@ -1,0 +1,131 @@
+.footer {
+    background: linear-gradient( to right, #7334ba, #130b87);
+}
+
+.footer footer {
+    padding: 50px;
+}
+
+footer .footer1 {
+    display: flex;
+    justify-content: space-around;
+    color: #ffffffc5;
+    padding-bottom: 50px;
+}
+
+.footer1 .footer-left h2{
+    width: 60%;
+    font-weight: 900;
+    font-size: 23px;
+    padding: 20px 0;
+    color: white;
+}
+
+.footer-right {
+    display:grid;
+}
+
+.footer-right .img {
+    display: flex;
+}
+
+.footer-right h4 {
+    font-size: 18px;
+    padding: 0 12px;
+}
+
+.footer-right .img img {
+    margin: 15px;
+    cursor: pointer;
+} 
+
+footer .footer2 {
+    display: flex;
+    color: #ffffffc5;
+}
+
+.footer2 .footer-logo {
+    padding: 50px;
+}
+
+.footer2 .footer-logo p {
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.footer2 .footer-logo figure {
+    display: flex;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.84);
+}
+
+.footer-logo figure img {
+    margin-right: 10px;
+}
+.footer-logo figure figcaption {
+    padding-top: 14px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.footer2 .join .social-p {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+.footer2 .join .social-p .facebook,
+.telegram{
+    display: flex;
+    font-size: 20px;
+    cursor: pointer;
+}
+.footer2 .join .social-p p{
+    font-size: 18px;
+    margin: 0 15px;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 50px 0;
+}
+
+.footer-links h3 {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 0;
+    color: white;
+}
+
+.footer-links a {
+    display: grid;
+}
+
+footer .copyright {
+    display: flex;
+    justify-content: space-around;
+    color: rgba(255, 255, 255, 0.718);
+    padding-top: 20px;
+    font-size: 1rem;
+}
+
+.copyright .terms a{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.copyright .social-logo {
+    display: flex;
+    font-size: 24px;
+}
+
+.copyright .social-logo svg {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.copyright .social-logo svg:hover {
+    color: #130b87;
+    transition: .3s ease-in-out;
+}

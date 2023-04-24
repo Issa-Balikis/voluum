@@ -1,0 +1,49 @@
+.cookie {
+    background: rgb(240, 233, 233);
+    position: absolute;
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.cookie-left {
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cookie-left h5 {
+    color: #cb10a6;
+    font-size: 15px;
+    padding: 10px 0;
+}
+
+.cookie-left h3 {
+    text-transform: capitalize;
+    font-weight: 700;
+    width: 50%;
+    font-size: 1.5rem;
+    padding: 10px 0;
+    line-height: 35px;
+}
+
+.cookie-left p {
+    width: 70%;
+}
+
+.cookie-right {
+    padding: 60px 0;
+    margin-right: 200px;
+}
+
+.cookie-right .img {
+    background: #9A54EA;
+    display: flex;
+    justify-content: center;
+}
+
+.cookie-right img{
+    width: 350px;
+    padding: 40px;
+}

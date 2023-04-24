@@ -1,0 +1,171 @@
+.afs {
+    position: relative;
+    margin: 700px 0 0 0; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.afs-header h4{
+    font-size: 25px;
+    font-weight: 700;
+    width: 98%;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.afs-group ul{
+    list-style-type: none;
+    display: flex;
+    padding: 20px;
+}
+
+.afs-group ul li {
+    margin: 3px;
+    background: rgb(231, 226, 226);
+    padding: 10px 60px;
+}
+
+.afs-group ul li:first-child {
+    border-top-left-radius: 15px;
+    background: #9A54EA;
+}
+.afs-group ul li:last-child {
+    border-top-right-radius: 15px;
+}
+
+.afsleftright {
+    display: flex;
+    padding: 30px 0;
+}
+
+.afs-left {
+    padding: 70px;
+    width: 40%;
+}
+.afs-left h6 {
+    text-transform: uppercase;
+    color: #cb10a6;
+    font-size: 15px;
+    padding: 10px 0;
+}
+
+.afs-left h2 {
+    font-weight: bold;
+    font-size: 25px;
+    text-transform: capitalize;
+    width: 70%;
+}
+
+.afs-left p {
+    padding: 10px 0;
+    font-size: 15px;
+}
+
+.afs-left .case-btn {
+    padding: 20px 10px;
+    background: none;
+}
+
+.case-btn button {
+    background: #cb10a6;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 40px;
+}
+
+.case-btn button:hover {
+    background: #9A54EA;
+}
+
+.afs-right {
+    padding: 70px 0;
+}
+
+.afs-right .flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex .rule h5{
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.flex ol {
+    display: flex;
+    width: 150%;
+    padding: 10px;
+}
+
+.flex ol li {
+    counter-increment: list;
+    position: relative;
+    list-style-type: none;
+    margin: 1px;
+    background: rgb(237, 234, 234);
+    padding: 10px;
+    font-size: 16px;
+}
+
+.flex ol li::before {
+    color: #9A54EA;
+    background: whitesmoke;
+    border-radius: 50%;
+    content: counter(list) ".";
+    left: -32px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.afs-right .rule-option {
+   margin: -50px 40px; 
+}
+
+.rule-option form {
+    display: grid;
+}
+
+.rule-option form .create {
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+.afs-right .conditions {
+    background: #9A54EA;
+    padding: 50px;
+    margin: 70px;
+    border-radius: 20px;
+}
+
+.afs-right .conditions .c-p {
+    color: white;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+
+.condition-option {
+    color: white;
+}
+
+.afs-right .conditions .condition-option  select{
+    margin: 5px;
+    padding: 10px;
+    background: #9A54EA;
+    border:  1px solid rgba(255, 255, 255, 0.358);
+    border-radius: 15px;
+}
+
+.afs-right .conditions .condition-option input {
+    background: #9A54EA;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.358);
+    border-radius: 15px;
+}
+
+.afs-right .case-btn {
+    display: flex;
+    justify-content: flex-end;
+}

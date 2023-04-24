@@ -1,0 +1,55 @@
+.home {
+    background: linear-gradient(100deg, #CB10A6, rgb(77, 19, 77));
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 0;
+}
+
+.home h3 {
+    text-transform: uppercase;
+    color: white;
+}
+
+.home h2 {
+    font-size: 4rem;
+    color: white;
+    padding: 10px;
+    font-weight: 700;
+}
+
+.home p {
+    color: white;
+    width: 40%;
+    text-align: center;
+}
+
+.home-btn {
+    padding: 20px;
+}
+
+.home-btn button {
+    margin: 15px;
+    padding: 0 30px;
+}
+
+.home-btn .btn-demo {
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+    background: none;
+}
+
+.home-btn .btn-gt {
+    background: #CB10A6;
+    border-radius: 20px;
+    color: white;
+}
+
+.home-btn button:hover {
+    background: #cb10a6d3;
+    color: white;
+    transition: .3s ease-in-out;
+}
